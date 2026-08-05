@@ -1,0 +1,154 @@
+<!--Abrindo a tag principal da página-->
+<html>
+
+<head>
+
+    <title>Teste seu código HTML</title>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Fábio Borges de Oliveira">
+
+</head>
+<!--Abrindo a tag body da página principal, colocando a cor cinza para o corpo da página-->
+
+<body bgcolor="#CCCCCC">
+    <!--Centralizar o formulário que conterá um componente text-->
+    <center>
+        <!--Formulário que conterá um componente textarea que, por sua vez
+           permitirá inserir os códigos que serão visualizados e executados 
+           na página.-->
+        <form>
+            <br>
+            <!--Abrindo o componente textarea que, por sua vez, conterá
+            os elementos que serão visualizados e executados na página.-->
+            <textarea name="fonte" cols="70" rows="20">
+                <!DOCTYPE html>
+                <html lang="en">
+                  <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>vamos ter um caso?</title>
+                  </head>
+                  
+                  <header>
+                  <h1>Switch Case</h1>
+                  </header>
+                  <body>
+                    <h1>Definidor de fase da vida</h1>
+                    <form action="#" method="get" name="frmcaso">
+                      <fieldset class="cadbasico">
+                        <legend>Entrada de Dados</legend>
+                        <label for="idade">Digite sua Idade:</label>
+                        <input type="text" name="idade" id="idade"  />
+                        <button type="submit" id="botao">Enviar</button>
+                      </fieldset>
+                    </form>
+                  </body>
+                
+                </html>
+                
+                <!-- Css Da Página -->
+                
+                <style>
+                  section {
+                    margin-top: 0px auto;
+                  }
+                
+                  .cadbasico {
+                    width: 300px;
+                    margin: 0px auto;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                  }
+                
+                  .cadbasico input {
+                    margin: 5px auto;
+                    width: 100%;
+                    padding: 5px 0;
+                  }
+                
+                  .cadbasico button {
+                    width: 30%;
+                    background-color: #b1ccf5;
+                    font-weight: bold;
+                    font-size: 16px;
+                  }
+                
+                  label {
+                    float: left;
+                  }
+                
+                  h1 {
+                    text-align: center;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    font-size: 50px;
+                  }
+                
+                  h2 {
+                    text-align: center;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                  }
+                
+                  header {
+                    display: flex;
+                    font: bold 20px Arial, Helvetica, sans-serif;
+                    background-color: blue;
+                    color: white;
+                  }
+                </style>
+                
+                <!-- Script da Página -->
+                 <script>
+                    function verificar() {
+                        let idade = parseInt(document.getElementById("idade").value);
+
+
+                        if (isNaN(idade) || idade < 0) {
+                            alert("Digite um Valor válido");
+                            return false;
+                        } else {
+                            switch (true) {
+                                case idade >= 0 && idade <= 3:
+                                    alert("Bebê");
+                                    console.log("Bebê");
+                                    break;
+                                case idade >= 4 && idade <= 10:
+                                    alert("Criança");
+                                    console.log("Criança");
+                                    break;
+                                case idade >= 11 && idade <= 17:
+                                    alert("Adolescente");
+                                    console.log("Adolescente");
+                                    break;
+                                case idade >= 18:
+                                    alert("Adulto");
+                                    console.log("Adulto");
+                                    break;
+                            }
+                        }
+                    }
+                    let botao = document.getElementById("botao");
+                    botao.addEventListener("click", verificar);
+
+                </script>
+                
+
+            </textarea><!--Finalizando o componente textarea-->
+            <br><br>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+
+        </form>
+
+
+    </center>
+
+</body><!--Finalizando a tag body da página principal-->
+
+
+
+
+
+
+</html><!--Fechando a tag principal da página-->

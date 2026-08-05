@@ -1,0 +1,144 @@
+<!--Abrindo a tag principal da página-->
+<html>
+<head>
+
+      <title>Teste seu código HTML</title>
+      <meta charset = "UTF-8">
+      <meta name="Autor" content="Fábio Borges de Oliveira">
+
+</head>
+<!--Abrindo a tag body da página principal, colocando a cor cinza para o corpo da página-->
+<body bgcolor="#CCCCCC">
+       <!--Centralizar o formulário que conterá um componente text-->
+       <center>
+       <!--Formulário que conterá um componente textarea que, por sua vez
+           permitirá inserir os códigos que serão visualizados e executados 
+           na página.-->
+       <form>
+            <br>
+            <!--Abrindo o componente textarea que, por sua vez, conterá
+            os elementos que serão visualizados e executados na página.-->
+            <textarea name="fonte" cols="70" rows="20">
+               <!-- Codigo Em HTML -->
+<html lang="pt-br">
+    <head>
+  
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Atividade Exemplo IF/ELSE</title>
+    </head>
+      <Header>
+        <h1>IF/ELSE</h1>
+      </Header>
+  
+    <body>
+      <h1>Validador</h1>
+      <h2>Este sistema Validará se o valor inteiro digitado é par e divisivel por 3</h2>
+      <form action="#" method="get" name="frmvalores"></form>
+      <fieldset class="cadbasico">
+        <legend>Entrada De Dados</legend>
+        <br />
+        <label for="valor1">Valor Inteiro</label>
+        <input type="number" name="txtvalor1" id="valor1" />
+        <br />
+        <button type="submit" id="botao">Enviar</button>
+        <br />
+      </fieldset>
+    </body>
+  </html>
+  
+  
+  <!-- CSS da pagina -->
+  
+  <style>
+    
+  section {
+    margin-top: 0px auto;
+  }
+  
+  .cadbasico {
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cadbasico input {
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+  }
+  
+  .cadbasico button {
+    width: 30%;
+    background-color: #b1ccf5;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  label {
+    float: left;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  header {
+    display: flex;
+    font: bold 20px Arial, Helvetica, sans-serif;
+    background-color: blue;
+    color: white;
+  }
+  
+  </style>
+  
+  <!-- Script da Pagina -->
+  
+  <script>
+    function validador(e) {
+      e.preventDefault();
+    let valor1 = +document.getElementById("valor1").value;
+  
+    if (valor1 == "") {
+      alert("Digite um valor para o campo");
+    } 
+    else if (valor1 % 2 == 0 && valor1 % 3 == 0) {
+      alert("O valor é par e divisivel por 3")
+    }else{
+      alert("O valor não atende aos críterios")
+    }
+  }
+  
+  let botao = document.getElementById("botao");
+  botao.addEventListener("click", validador);
+  
+  </script>
+
+            </textarea><!--Finalizando o componente textarea-->
+            <br><br>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);"> 
+
+       </form>
+
+
+       </center>
+
+</body><!--Finalizando a tag body da página principal-->
+      
+
+
+
+
+
+</html><!--Fechando a tag principal da página-->
