@@ -1,5 +1,5 @@
 // Menu lateral
- const btnMenu = document.querySelector("#btnMenu");
+const btnMenu = document.querySelector("#btnMenu");
 const sidebar = document.querySelector("#sidebar");
 const iconeMenu = document.querySelector("#iconeMenu");
 
@@ -17,3 +17,4 @@ btnMenu.addEventListener("click", function () {
     }
 
 });
+// Fim Menu Lateral
