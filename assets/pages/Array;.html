@@ -1,20 +1,23 @@
 <!--Abrindo a tag principal da página-->
 <html>
+
 <head>
 
-      <title>Teste seu código HTML</title>
-      <meta charset = "UTF-8">
-      <meta name="Autor" content="Fábio Borges de Oliveira">
+    <title>Teste seu código HTML</title>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Fábio Borges de Oliveira">
 
 </head>
 <!--Abrindo a tag body da página principal, colocando a cor cinza para o corpo da página-->
+
 <body bgcolor="#CCCCCC">
-       <!--Centralizar o formulário que conterá um componente text-->
-       <center>
-       <!--Formulário que conterá um componente textarea que, por sua vez
+    <h1 style="text-align: center;">Soma entre vetores 1 e 2, armazenando o resultado no vetor 3.</h1>
+    <!--Centralizar o formulário que conterá um componente text-->
+    <center>
+        <!--Formulário que conterá um componente textarea que, por sua vez
            permitirá inserir os códigos que serão visualizados e executados 
            na página.-->
-       <form>
+        <form>
             <br>
             <!--Abrindo o componente textarea que, por sua vez, conterá
             os elementos que serão visualizados e executados na página.-->
@@ -25,22 +28,27 @@
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
                     <title>Valida</title>
                 </head>
                 
+                <header>
+                    <h1>Array</h1>
+                </header>
+                
                 <body>
-                    <header>
-                        <h1> Matrizes </h1>
-                    </header>
-                    <h1>Auto-Multiplicador</h1>
-                    <h2>Este Sistema Criara aleatoriamente uma matriz 5x5 e automaticamente multiplicará o valor obtido em cada posição
-                        por DOIS </h2>
+                    <h1>Soma entre vetores 1 e 2, armazenando o resultado no vetor 3.
+                    </h1>
+                    <h4>Soma entre vetores 1 e 2, armazenando o resultado no vetor 3.</h4>
+                    <h6>(use o console[F12])</h6>
                     <form action="#" method="get" name="frmcaso">
                         <fieldset class="cadbasico">
-                            <legend>Botão Inciador</legend>
+                            <legend>Entrada de Dados</legend>
                             <button type="submit" id="botao">Enviar</button>
+                            <button type="button" onclick="window.location.reload()">Voltar</button>
                         </fieldset>
                     </form>
+                    
                 </body>
                 
                 </html>
@@ -97,73 +105,41 @@
                         color: white;
                     }
                 
-                    h4,
-                    h6 {
+                    h4, h6{
                         text-align: center;
                         margin-top: 0px;
                         margin-bottom: 10px;
-                
+                        
                     }
                 </style>
                 
-                <!-- Codigo da Página  -->
-                
+                <!-- Script da Página -->
                 <script>
-                    function matrizes(e) {
-                
-                        e.preventDefault()
-                
-                        matriz = []
-                        matriznova = []
-                        let linhas = 5
-                        let colunas = 5
-                
-                        for (let i = 0; i < linhas; i++) {
-                            matriz[i] = []
-                            for (let j = 0; j < colunas; j++) {
-                                matriz[i][j] = Math.floor(Math.random() * 20)
-                            }
+                    function vetores(e) {
+
+                        e.preventDefault();
+
+                        let valor1 = [];
+                        let valor2 = [];
+                        let valor3 = [];
+                        let i;
+
+                        for (i = 0; i < 3; i++) {
+                            valor1[i] = Number(prompt(`Digite valor do indice ${i + 1} do vetor 1`));
+                            valor2[i] = Number(prompt(`Digite valor do indice ${i + 1} do vetor 2`));
                         }
-                
-                        for (let i = 0; i < linhas; i++) {
-                            matriznova[i] = []
-                            for (let j = 0; j < colunas; j++) {
-                                matriznova[i][j] = matriz[i][j] * 2
-                            }
+
+                        for (i = 0; i < 3; i++) {
+                            valor3[i] = valor1[i] + valor2[i];
                         }
-                
-                        //printss
-                
-                        document.write("<h3>Matriz Original</h1>");
-                
-                        for (let i = 0; i < linhas; i++) {
-                            for (let j = 0; j < colunas; j++) {
-                                document.write(matriz[i][j] + "&nbsp&nbsp");
-                
-                            }
-                            document.write("<br>");
-                
+
+                        for (i = 0; i < 3; i++) {
+                            console.log(`${valor1[i]} + ${valor2[i]} = ${valor3[i]}`);
                         }
-                        document.write("<br>");
-                        document.write("<br>");
-                
-                        document.write("<h3>Matriz Nova</h1>");
-                        for (let i = 0; i < linhas; i++) {
-                            for (let j = 0; j < colunas; j++) {
-                                document.write(matriznova[i][j] + "&nbsp&nbsp");
-                
-                            }
-                            document.write("<br>");
-                        }
-                        document.write("<br><br>");
-                        document.write("<button onclick=\"location.reload()\">Voltar</button>");
-                
-                
-                
                     }
-                
-                    let botao = document.getElementById("botao");
-                    botao.addEventListener("click", matrizes);
+
+                    botao = document.getElementById("botao");
+                    botao.addEventListener("click", vetores);
                 </script>
 
             </textarea><!--Finalizando o componente textarea-->
@@ -171,13 +147,14 @@
             <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
             <input type="button" value="Voltar" onclick="history.back()">
 
-       </form>
+
+        </form>
 
 
-       </center>
+    </center>
 
 </body><!--Finalizando a tag body da página principal-->
-      
+
 
 
 

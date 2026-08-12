@@ -4,6 +4,13 @@ body {
     padding: 0;
 }
 
+#description {             /* Descrição do site */
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 /* Menu SIDEBAR */
 #btnMenu {
@@ -71,7 +78,7 @@ body.menu-ativo #conteudo-geral {
 /* Fim Sidebar */
 
 
-
+/* Estilo geral do corpo da página */
 body {
     background-color: rgb(10, 121, 141);
     color: aliceblue;
@@ -97,6 +104,8 @@ header img {
 }
 
 /* Fim do cabeçalho */
+
+/* Cards */
 
 .card-box {
     display: grid;
@@ -129,6 +138,10 @@ header img {
     margin: 0;
 }
 
+/* Fim Cards */
+
+
+/* Rodapé */
 footer {
     color: #fff;
     text-align: center ;
@@ -144,9 +157,4 @@ footer p{
     font-size: 11px;
 }
 
-#description {
-    padding: 20px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.5;
-}
+/* Fim Rodapé */

@@ -8,6 +8,7 @@
   <!--Abrindo a tag body da página principal, colocando a cor cinza para o corpo da página-->
 
   <body bgcolor="#CCCCCC">
+    <h1 style="text-align: center;">Este sistema definirá a idade obtida em fase da vida.</h1>
     <!--Centralizar o formulário que conterá um componente text-->
     <center>
       <!--Formulário que conterá um componente textarea que, por sua vez
@@ -19,24 +20,27 @@
             os elementos que serão visualizados e executados na página.-->
         <textarea name="fonte" cols="70" rows="20">
                 <!DOCTYPE html>
-                <html lang="en">
+                <html lang="pt-br">
                   <head>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>vamos ter um caso?</title>
+                    <title>Exemplo Case</title>
                   </head>
                   
                   <header>
                   <h1>Switch Case</h1>
                   </header>
                   <body>
-                    <h1>Definidor de fase da vida</h1>
+                    <h1>Este sistema definirá a idade obtida em fase da vida</h1>
+                    <h2>Classificará a idade digite com "bebê","criança","adulto" ou "idoso",</h2>
                     <form action="#" method="get" name="frmcaso">
                       <fieldset class="cadbasico">
                         <legend>Entrada de Dados</legend>
                         <label for="idade">Digite sua Idade:</label>
                         <input type="text" name="idade" id="idade"  />
                         <button type="submit" id="botao">Enviar</button>
+                        <button type="button" onclick="window.location.reload()">Voltar</button>
+
                       </fieldset>
                     </form>
                   </body>

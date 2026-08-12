@@ -9,6 +9,8 @@
 </head>
 <!--Abrindo a tag body da página principal, colocando a cor cinza para o corpo da página-->
 <body bgcolor="#CCCCCC">
+  <h1 style="text-align: center;">Descubra o Número aleatório de 0 a 10.</h1>
+
        <!--Centralizar o formulário que conterá um componente text-->
        <center>
        <!--Formulário que conterá um componente textarea que, por sua vez
@@ -38,9 +40,10 @@
                     <fieldset class="cadbasico">
                       <legend>Entrada de Dados</legend>
                       <button type="submit" id="botao">Enviar </button>
+                      <button type="button" onclick="window.location.reload()">Voltar</button>
+
                     </fieldset>
                   </form>
-                  <script src="./js/script.js"></script>
                 </body>
                 
                 </html>
@@ -103,7 +106,6 @@
                   function adivinhar() {
                     let tentativas = 5
                     const numeroaleatorio = Math.floor(Math.random() * 11)
-                    alert(numeroaleatorio);
                     let resposta = -1
                 
                     while (tentativas !== 0 && numeroaleatorio !== resposta) {
